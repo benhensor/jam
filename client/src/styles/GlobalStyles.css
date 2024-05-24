@@ -1,0 +1,92 @@
+@import url('../assets/fonts/fonts.css');
+
+:root {
+  /* COLORS */
+  --color-primary: #00aa90;
+  --color-secondary: #ffaa00;
+  --color-tertiary: #43ebd1;
+  --color-quaternary: #FFA07A;
+  --color-quinary: #FF8C00;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-gray: #808080;
+  --color-light-gray: #D3D3D3;
+  --color-dark-gray: #A9A9A9;
+  --color-light: #F5F5F5;
+  --color-dark: #111;
+  --color-success: #008000;
+  --color-error: #FF4500;
+  --color-warning: #FFA500;
+  --color-info: #00BFFF;
+
+  /* FONT SIZES */
+  --font-size-xxs: 1rem;
+  --font-size-xs: 1.2rem;
+  --font-size-sm: 1.4rem;
+  --font-size-md: 1.6rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.5rem;
+  --font-size-xxl: 5rem;
+  --font-size-xxxl: 10rem;
+
+  /* MARGINS */
+  --tablet: 0 2rem;
+  --mobile: 0 1rem;
+}
+
+*, *::before, *::after, h1, h2, h3, h4, h5, h6, p, a, span, div, img, ul, li, button, input, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: var(--color-dark);
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  background: url('../assets/img/background.webp');
+  background-size: cover;
+  background-position: center 12rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh + 12rem);
+}
+
+@media screen and (max-width: 1199px) {
+  main {
+    background-position: center 10rem;
+    margin-top: 10rem;
+    height: calc(100vh - 10rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    background-position: center 8rem;
+    margin-top: 8rem;
+    height: calc(100vh - 8rem);
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    background-position: center 7rem;
+    margin-top: 7rem;
+    height: calc(100vh - 7rem);
+  }
+}
